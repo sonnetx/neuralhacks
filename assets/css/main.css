@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(235, 68, 68);
+    background-color: rgb(68, 71, 235);
     margin: 0;
     padding: 0;
 }
@@ -11,17 +11,21 @@ body {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgb(21, 206, 98);
     color: white;
     position: sticky;
     top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     height: 4rem;
 }
 
 .brand-title {
     font-size: 1.3rem;
     margin: 1rem;
-    color: red;
+    color: rgb(68, 71, 235);
 }
 
 .navbar-links {
@@ -47,11 +51,19 @@ body {
 }
 
 .navbar-links li .badAnchors:hover {
-    color: rgb(95, 201, 95);
+    color: rgb(216, 44, 53);
 }
 
 .navbar-links li .goodAnchors:hover {
-    color: rgb(142, 64, 214);
+    color: rgb(50, 219, 231);
+}
+
+.active-bad {
+    color: rgb(216, 44, 53) !important;
+}
+
+.active-good {
+    color: rgb(50, 219, 231) !important;
 }
 
 .toggle-btn {
@@ -108,3 +120,92 @@ body {
 
 
 /* End of Header */
+
+
+/* Start of Body */
+
+.home-text {
+    background-color: rgb(21, 206, 98);
+    margin: 3rem;
+    padding: 2rem;
+    font-family: "Courier";
+    text-align: center;
+    color: whitesmoke;
+}
+
+.home-text .blog-text {
+    text-align: left !important;
+}
+
+.home-text .blog-text h3 {
+    text-align: center !important;
+}
+
+.graphs {
+    /* padding: rem !important; */
+    margin: auto;
+    display: block;
+}
+
+.home-img {
+    margin: 1rem auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* height: 500px;
+  width: 700px;
+  margin: 50px 75px; */
+}
+
+
+/* Comments Section */
+
+.comments {
+    margin: auto;
+    display: block;
+}
+
+.comments .inputs input {
+    margin: 0.5rem auto;
+    display: block;
+    width: 90%;
+}
+
+#main-comment {
+    height: 5rem;
+    overflow-x: none;
+    overflow-y: hidden;
+}
+
+button {
+    margin: auto;
+    display: block;
+    width: 5.5rem;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(68, 71, 235);
+    border: none;
+    padding: 0.5rem;
+}
+
+iframe {
+    width: 80%;
+    padding: 2rem;
+}
+
+.home-text ol {
+    text-align: left !important;
+}
+
+ol a {
+    text-decoration: none;
+    color: blue;
+    padding: 1rem;
+}
+
+ol li {
+    padding: 1rem;
+}
+
+
+/* End of Body */
